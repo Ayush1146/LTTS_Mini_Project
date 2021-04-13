@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include "func.h"
 int main()
 {
     printf("Enter the operation: \n1 = Resistance\n2 = capacitor\n3 = Inductor \n");
@@ -9,14 +9,14 @@ int main()
     switch (choice)
     {
     case 1:
-        resistance();
+        resistor();
         break;
-    case 2:
-        capacitance();
-        break;
-    case 3:
-        inductance();
-        break;
+    // case 2:
+    //     capacitor();
+    //     break;
+    // case 3:
+    //     inductor();
+    //     break;
     
     default:
         printf("Invalid choice\n");
