@@ -11,6 +11,7 @@
 
 #include "func.h"
 #include <stdio.h>
+#include <ctype.h>
 
 void resistor()
 {
@@ -47,23 +48,38 @@ void band()
         n=4;
         else if(bandno==2)
         n=5;
-            
+            char user_input_values[n][20];
             for (int i=1;i<=n;i++)
             {
                 printf("Enter the color of band  %d",i);
-                if(i==1)
-                scanf("%s",l1);
-                else if(i==2)
-                scanf("%s",l2);
-                else if(i==3)
-                scanf("%s",l3);
-                else if(i==4)
-                scanf("%s",l4);
-                else if(i==5)
-                scanf("%s",l5);
+                // if(i==1)
+                // scanf("%s",l1);
+                // else if(i==2)
+                // scanf("%s",l2);
+                // else if(i==3)
+                // scanf("%s",l3);
+                // else if(i==4)
+                // scanf("%s",l4);
+                // else if(i==5)
+                // scanf("%s",l5);
+                scanf("%s",user_input_values[20][i]);
+                printf("%s",user_input_values[20][i]);
 
+                
             }
-            printf("%s %s %s %s %s",l1,l2,l3,l4,l5);
+            // char user_input_values[20][6] ={l1,l2,l3,l4,l5} ;
+            for(int j=0;j<n;j++)
+            {
+                for(int i = 0; user_input_values[i][j]; i++)
+                {
+                     user_input_values[i][j] = tolower(user_input_values[i][j]);
+                     printf("%s",user_input_values[i]);
+                }
+            }
+            //printf("%s %s %s %s %s",l1,l2,l3,l4,l5);
+
+            int black = 0, brown = 1, red = 2, orange = 3, yellow = 4, green = 5,blue = 6,violet =7,grey = 8,white = 9,gold = 5,silver = 10;
+
           
     }
 
