@@ -31,6 +31,7 @@ One of the burdensome job in electronics is identifying the resistance value of 
  - Capacitance operation
 
 ## SWOT   ANALYSIS
+![Description](link)
 
 ## 4 W's and 1 H
 
