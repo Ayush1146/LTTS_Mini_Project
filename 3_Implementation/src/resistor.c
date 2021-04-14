@@ -11,26 +11,35 @@
 
 #include "func.h"
 
-
+typedef struct resistancee{
+    double resistance1;
+    double resistance2;
+}resistancee;
 void resistor()
 {
 
     int choice;
-    printf("Enter the operation: \n1 = Band\n2 = Series\n3 = Parallel \n");
+    printf("Enter the operation: \n1 for Band\n2 for Series\n3 for Parallel \n");
     scanf("%d",&choice);
+    resistancee resist;
     switch (choice)
     {
     case 1:
         band();
         break;
-    // case 2:
-    //     series();
-    //     break;
-    // case 3:
-    //     parallel();
-    //     break;
+    case 2:
+        scanf("%lf",&resist.resistance1);
+        scanf("%lf",&resist.resistance2);
+        resistance_in_series(resist.resistance1,resist.resistance2);
+        break;
+    case 3:
+        scanf("%lf",&resist.resistance1);
+        scanf("%lf",&resist.resistance2);
+        resistance_in_parallel(resist.resistance1,resist.resistance2);
+        break;
     
     default:
+        printf("Invalid Operation");
         break;
     }
     
@@ -69,44 +78,24 @@ void band()
             }
 
             printf("%s %s %s %s %s",band1,band2,band3,band4,band5);
-            /**
-             * @brief converting all the user input values to lower case
-             * 
-             */
-            /*for(int j=0;j<n;j++)
-            {
-                for(int i = 0; band1[1]; i++)
-                {
-                     band1[i] = tolower(band1[i]);
-                    //  printf("%s",band1);
-                }
-                 for(int i = 0; band2[1]; i++)
-                {
-                     band2[i] = tolower(band2[i]);
-                    //  printf("%s",band2);
-                }
-                for(int i = 0; band3[1]; i++)
-                {
-                     band3[i] = tolower(band1[i]);
-                    //  printf("%s",band3);
-                }
-                 for(int i = 0; band4[1]; i++)
-                {
-                     band4[i] = tolower(band4[i]);
-                    //  printf("%s",band4);
-                }
-                 for(int i = 0; band5[1]; i++)
-                {
-                     band5[i] = tolower(band5[i]);
-                //      printf("%s",band5);
-                }
-                
-
-            }*/
-            //printf("%s %s %s %s %s",band1,band2,band3,band4,band5);
-
+            
         int black = 0, brown = 1, red = 2, orange = 3, yellow = 4, green = 5,blue = 6,violet =7,grey = 8,white = 9,gold = 5,silver = 10;
         
         
+    }
+
+    /**
+     * @brief resistance in series calculation
+     * 
+     * @param resis1 first resistance value
+     * @param resis2 second resistance value
+     * @return double 
+     */
+    double resistance_in_series(double resis1,double resis2){
+        return resis1+resis2;
+    }
+
+    double resistance_in_parallel(double resis1,double resis2){
+        return (resis1*resis2)/(resis1+resis2);
     }
 
