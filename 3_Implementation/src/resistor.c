@@ -1,17 +1,16 @@
 /**
  * @file resistor.c
- * @author your name (you@domain.com)
- * @brief 
+ * @author Nikhil Jose (nikhiljoseniju@gmail.com)
+ * @brief file to calculate the resistance from band colors and also to calculate series and parallel calculation of resistance
  * @version 0.1
  * @date 2021-04-13
  * 
  * @copyright Copyright (c) 2021
  * 
  */
-
+#include<stdio.h>
 #include "func.h"
-#include <stdio.h>
-#include <ctype.h>
+
 
 void resistor()
 {
@@ -42,44 +41,72 @@ void band()
         printf("Enter the band type(1/2): \n1 = Four band\n2 = Five band\n");
         int bandno;
         scanf("%d",&bandno);
-        char l1[20],l2[20],l3[20],l4[20],l5[20];
+        char band1[20],band2[20],band3[20],band4[20],band5[20];
         int n;
         if(bandno==1)
         n=4;
         else if(bandno==2)
         n=5;
-            char user_input_values[n][20];
-            for (int i=1;i<=n;i++)
+            // char user_input_values[n][20];
+            for (int index=1;index<=n;index++)
             {
-                printf("Enter the color of band  %d",i);
-                // if(i==1)
-                // scanf("%s",l1);
-                // else if(i==2)
-                // scanf("%s",l2);
-                // else if(i==3)
-                // scanf("%s",l3);
-                // else if(i==4)
-                // scanf("%s",l4);
-                // else if(i==5)
-                // scanf("%s",l5);
-                scanf("%s",user_input_values[20][i]);
-                printf("%s",user_input_values[20][i]);
+                printf("Enter the color of band  %d",index);
+                if(index==1)
+                scanf("%s",band1);
+                else if(index==2)
+                scanf("%s",band2);
+                else if(index==3)
+                scanf("%s",band3);
+                else if(index==4)
+                scanf("%s",band4);
+                else if(index==5)
+                scanf("%s",band5);
+               
+
+               
 
                 
             }
-            // char user_input_values[20][6] ={l1,l2,l3,l4,l5} ;
+
+            //printf("%s %s %s %s %s",band1,band2,band3,band4,band5);
+            /**
+             * @brief converting all the user input values to lower case
+             * 
+             */
             for(int j=0;j<n;j++)
             {
-                for(int i = 0; user_input_values[i][j]; i++)
+                for(int i = 0; band1[1]; i++)
                 {
-                     user_input_values[i][j] = tolower(user_input_values[i][j]);
-                     printf("%s",user_input_values[i]);
+                     band1[i] = tolower(band1[i]);
+                    //  printf("%s",band1);
                 }
+                 for(int i = 0; band2[1]; i++)
+                {
+                     band2[i] = tolower(band2[i]);
+                    //  printf("%s",band2);
+                }
+                for(int i = 0; band3[1]; i++)
+                {
+                     band3[i] = tolower(band1[i]);
+                    //  printf("%s",band3);
+                }
+                 for(int i = 0; band4[1]; i++)
+                {
+                     band4[i] = tolower(band4[i]);
+                    //  printf("%s",band4);
+                }
+                 for(int i = 0; band5[1]; i++)
+                {
+                     band5[i] = tolower(band5[i]);
+                //      printf("%s",band5);
+                }
+                
+
             }
-            //printf("%s %s %s %s %s",l1,l2,l3,l4,l5);
+            //printf("%s %s %s %s %s",band1,band2,band3,band4,band5);
 
-            int black = 0, brown = 1, red = 2, orange = 3, yellow = 4, green = 5,blue = 6,violet =7,grey = 8,white = 9,gold = 5,silver = 10;
-
-          
+        int black = 0, brown = 1, red = 2, orange = 3, yellow = 4, green = 5,blue = 6,violet =7,grey = 8,white = 9,gold = 5,silver = 10;
+        
+        
     }
 

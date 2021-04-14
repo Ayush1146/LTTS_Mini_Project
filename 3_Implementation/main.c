@@ -14,9 +14,9 @@ int main()
     // case 2:
     //     capacitor();
     //     break;
-    // case 3:
-    //     inductor();
-    //     break;
+    case 3:
+        inductancee();
+        break;
     
     default:
         printf("Invalid choice\n");

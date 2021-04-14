@@ -36,6 +36,6 @@ int sum(int a,int b);
  */
 void band();
 
-
+void inductancee();
 
 #endif  /* __FUNC_H__  */
