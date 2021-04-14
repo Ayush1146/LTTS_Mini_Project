@@ -15,6 +15,13 @@
 #include <stdio.h>
 
 /**
+ * @brief band functio declaration
+ * 
+ */
+
+void band();
+
+/**
  * @brief resistor function declaration
  * 
  */
@@ -24,7 +31,7 @@ void resistor();
  * @brief capacitor function declaration
  * 
  */
-
+void capacitorr();
 
 /**
  * @brief inductor function declaration

@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#include<stdio.h>
+
 #include "func.h"
 
 
@@ -68,12 +68,12 @@ void band()
                 
             }
 
-            //printf("%s %s %s %s %s",band1,band2,band3,band4,band5);
+            printf("%s %s %s %s %s",band1,band2,band3,band4,band5);
             /**
              * @brief converting all the user input values to lower case
              * 
              */
-            for(int j=0;j<n;j++)
+            /*for(int j=0;j<n;j++)
             {
                 for(int i = 0; band1[1]; i++)
                 {
@@ -102,7 +102,7 @@ void band()
                 }
                 
 
-            }
+            }*/
             //printf("%s %s %s %s %s",band1,band2,band3,band4,band5);
 
         int black = 0, brown = 1, red = 2, orange = 3, yellow = 4, green = 5,blue = 6,violet =7,grey = 8,white = 9,gold = 5,silver = 10;

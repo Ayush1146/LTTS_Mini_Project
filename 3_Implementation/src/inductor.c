@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#include<stdio.h>
+
 #include "func.h"
 
 typedef struct inductance
@@ -27,7 +27,7 @@ void inductancee()
     scanf("%d",&operation_inductor);
     
     
-    printf("Enter two inductance: ");
+    printf("Enter two inductance in milli Henry: ");
     
    
 
@@ -47,6 +47,6 @@ void inductancee()
     printf("Invalid Operation");
         break;
     }
-    printf("%lf",inductor_result);
+    printf("The Resultant Inductance is : %lf milli Henry",inductor_result);
 
 }

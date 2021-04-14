@@ -11,9 +11,9 @@ int main()
     case 1:
         resistor();
         break;
-    // case 2:
-    //     capacitor();
-    //     break;
+    case 2:
+        capacitorr();
+        break;
     case 3:
         inductancee();
         break;
