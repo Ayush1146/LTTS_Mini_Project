@@ -1,7 +1,7 @@
 /**
  * @file func.h
  * @author Nikhil Jose (nikhiljoseniju@gmail.com)
- * @brief 
+ * @brief header file for electronic_operation
  * @version 0.1
  * @date 2021-04-14
  * 
@@ -33,11 +33,21 @@ void resistor();
  */
 void capacitorr();
 
+// capacitor in series declaration
+double capacitor_series_result(double cap_1, double cap_2);
+// capacitor in parallel declaration
+double capacitor_parallel_result(double cap_1, double cap_2);
+
 /**
  * @brief inductor function declaration
  * 
  */
 void inductancee();
+
+// inductor in series
+double inductor_series_result(double ind1, double ind2);
+//inductor in parallel
+double inductor_parallel_result(double ind1, double ind2);
 
 
 #endif/* __FUNC_H__*/

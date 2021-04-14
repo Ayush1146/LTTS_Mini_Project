@@ -24,29 +24,37 @@ void inductancee()
     double inductor_result;
     inductor inductora;
     printf("Enter the operation you want to perform(1 or 2): \n1. Inductor in series\n2. Inductor in parallel\n");
-    scanf("%d",&operation_inductor);
+    scanf("%d \n",&operation_inductor);
     
     
-    printf("Enter two inductance in milli Henry: ");
+    printf("Enter two inductance in milli Henry: \n");
     
    
 
-    scanf("%lf",&inductora.inductor1);
-    scanf("%lf",&inductora.inductor2);
+    scanf("%lf\n",&inductora.inductor1);
+    scanf("%lf\n",&inductora.inductor2);
     
     switch (operation_inductor)
     {
     case 1: //series
-        inductor_result = inductora.inductor1+inductora.inductor2;
+        inductor_result = inductor_series_result(inductora.inductor1,inductora.inductor2);
         break;
     case 2: //parallel
-        inductor_result = (inductora.inductor1*inductora.inductor2)/(inductora.inductor1+inductora.inductor2);
+        inductor_result = inductor_parallel_result(inductora.inductor1,inductora.inductor2);
         break;
     
     default:
-    printf("Invalid Operation");
+    printf("Invalid Operation\n");
         break;
     }
-    printf("The Resultant Inductance is : %lf milli Henry",inductor_result);
+    printf("The Resultant Inductance is : %lf milli Henry.\n",inductor_result);
 
+}
+
+double inductor_series_result(double ind1, double ind2){
+    return ind1+ind2;
+}
+
+double inductor_parallel_result(double ind1, double ind2){
+    return (ind1*ind2)/(ind1+ind2);
 }
