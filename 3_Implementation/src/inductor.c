@@ -47,7 +47,7 @@ void inductancee()
     printf("Invalid Operation\n");
         break;
     }
-    printf("The Resultant Inductance is : %lf milli Henry.\n",inductor_result);
+    printf("The Resultant Inductance is : %0.2lf milli Henry.\n",inductor_result);
 
 }
 

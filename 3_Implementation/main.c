@@ -2,7 +2,7 @@
 #include "func.h"
 int main()
 {
-    printf("Enter the operation: \n1 = Resistance\n2 = capacitor\n3 = Inductor \n");
+    printf("Enter the operation: \n1 for Resistance\n2 for capacitor\n3 for Inductor \n");
     int choice;
     scanf("%d",&choice);
     printf("%d",choice);
