@@ -1,9 +1,9 @@
 /**
  * @file func.h
  * @author Nikhil Jose (nikhiljoseniju@gmail.com)
- * @brief header file for resistance , capacitance and inductor operation
+ * @brief 
  * @version 0.1
- * @date 2021-04-13
+ * @date 2021-04-14
  * 
  * @copyright Copyright (c) 2021
  * 
@@ -13,29 +13,24 @@
 #define __FUNC_H__
 
 #include <stdio.h>
-#include <ctype.h>
 
 /**
- * @brief 
+ * @brief resistor function declaration
  * 
  */
-
 void resistor();
-/**
- * @brief 
- * 
- * @param a 
- * @param b 
- * @return int 
- */
-int sum(int a,int b);
 
 /**
- * @brief 
+ * @brief capacitor function declaration
  * 
  */
-void band();
 
 
+/**
+ * @brief inductor function declaration
+ * 
+ */
+void inductancee();
 
-#endif  /* __FUNC_H__  */
+
+#endif/* __FUNC_H__*/
