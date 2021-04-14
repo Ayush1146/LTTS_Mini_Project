@@ -27,6 +27,11 @@ void band();
  */
 void resistor();
 
+//resistor series declaration
+double resistance_in_series(double resis1,double resis2);
+//resistor parallel declaration
+double resistance_in_parallel(double resis1,double resis2);
+
 /**
  * @brief capacitor function declaration
  * 
